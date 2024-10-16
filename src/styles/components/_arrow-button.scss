@@ -1,0 +1,47 @@
+.arrow-button {
+  margin-right: 0;
+  width: 25%;
+  background-color: $color-1;
+  padding: 15px 25px;
+  text-decoration: none;
+  border-radius: 15px;
+  border: none;
+  font-size: 1rem;
+  font-weight: 550;
+  color: white;
+  background-image: url("../images/icons/arrow.svg");
+  background-repeat: no-repeat;
+  background-position: calc(100% - 1rem) 50%;
+  background-size: 2.5rem;
+  transition: background-position 0.3s ease !important;
+  cursor: pointer;
+
+  &-other {
+    display: block;
+    width: 40% !important;
+
+    @media(max-width: 600px) {
+      width: 70% !important;
+    }
+  }
+
+  @media(max-width: 1200px) {
+    background-size: 1.5rem;
+  }
+
+  @media(max-width: 992px) {
+    background-image: none;
+    font-size: 0.8rem;
+    padding: 1rem;
+  }
+
+  @media(max-width: 600px) {
+    width: 60%;
+  }
+
+  &:hover,
+  &:focus {
+    background-color: $color-1-hover;
+    background-position: calc(100% - 1.5rem) 50%;
+  }
+}

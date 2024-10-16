@@ -1,0 +1,141 @@
+.offer-additional {
+  display: flex;
+  flex-wrap: wrap;
+
+  #pin-icon {
+    display: block;
+    position: absolute;
+    height: 400px;
+    width: 300px;
+    top: -100px;
+    left: 20px;
+    object-fit: contain;
+  }
+
+  &-information-container {
+    display: flex;
+    flex-wrap: wrap;
+
+    justify-content: space-between;
+    width: 100%;
+    padding-bottom: 1rem;
+
+    &-column {
+      overflow: hidden;
+      width: 48%;
+      background-color: $color-2;
+      border-radius: 20px;
+
+      &-subcontent {
+        &-less-text p {
+          padding-left: 0.8rem;
+          font-size: 1.2rem !important;
+        }
+
+        div {
+          text-align: right;
+
+          p {
+            color: #fff !important;
+            font-size: 2.5rem;
+
+            @media (max-width: 500px) {
+              font-size: 2.1rem;
+            }
+          }
+        }
+
+        position: relative;
+        display: flex;
+        flex-wrap: wrap;
+        width: 90%;
+        height: 100%;
+        justify-content: flex-end;
+        align-items: flex-end;
+        padding: 1rem;
+
+        @media (max-width: 500px) {
+          img {
+            display: none;
+          }
+        }
+      }
+
+      &-other {
+        &-subcontent {
+          div {
+            text-align: left !important;
+          }
+
+          justify-content: flex-start;
+          align-items: center;
+          padding: 1rem;
+
+          @media (max-width: 500px) {
+            img {
+              display: none;
+            }
+          }
+        }
+      }
+
+      h3 {
+        border-radius: 20px 20px 0 0;
+        background-color: $color-2-hover;
+        margin: 0 !important;
+        text-align: center;
+        line-height: 5rem;
+        font-size: 3rem;
+      }
+
+      p {
+        width: 100%;
+        font-size: 1.8rem;
+        margin-left: 1rem;
+        line-height: 100%;
+      }
+
+      img {
+        width: 100%;
+        height: 100%;
+        border-radius: 20px;
+        object-fit: cover;
+      }
+
+      @media (max-width: 920px) {
+        width: 100%;
+
+        &:nth-child(2) {
+          margin-top: 1rem;
+        }
+
+        h3 {
+          line-height: 3rem;
+          font-size: 2rem;
+        }
+
+        p {
+          font-size: 1.5rem;
+        }
+      }
+    }
+  }
+
+  &-iframe-container {
+    border: 2px solid $color-2;
+    width: 100%;
+    height: 450px;
+    border-radius: 20px;
+
+    iframe {
+      width: 100%;
+      border-radius: 20px;
+    }
+  }
+
+
+  &-right {
+    display: flex;
+    flex-direction: row;
+  }
+}

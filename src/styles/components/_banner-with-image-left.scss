@@ -1,0 +1,50 @@
+.banner-with-image-left {
+  background-color: $color-3;
+  margin-top: 10px;
+  min-height: 10vh;
+  border-radius: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 1rem;
+  align-items: center;
+  justify-content: space-between;
+  transition: 0.3s !important;
+
+  &:hover {
+    background-color: $color-3-hover;
+  }
+
+  &-image {
+    height: 100%;
+    width: 30%;
+    margin-right: 2rem;
+    padding: 0.5rem;
+    background-color: $color-4;
+    border-radius: 50%;
+
+    @media (max-width: 768px) {
+      width: 100%;
+    }
+
+    img {
+      object-fit: cover;
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+    }
+  }
+
+  &-content {
+    width: 60%;
+
+    @media (max-width: 768px) {
+      width: 100%;
+    }
+
+    p {
+      text-align: justify;
+    }
+  }
+
+  // Different colours of component
+}

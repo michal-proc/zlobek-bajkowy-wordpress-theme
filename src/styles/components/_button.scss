@@ -1,0 +1,30 @@
+.pdf-download {
+  text-align: center;
+  margin-top: 20px;
+
+  .button {
+    display: inline-flex;
+    align-items: center;
+    background-color: $color-1;
+    color: white;
+    padding: 15px 25px;
+    text-decoration: none;
+    border-radius: 15px;
+    font-size: 1rem;
+    transition: background-color 0.3s ease !important;
+    border: none;
+    cursor: pointer;
+
+    i {
+      margin-right: 10px;
+    }
+
+    &:hover {
+      background-color: $color-1-hover;
+    }
+
+    &:focus {
+      outline: none;
+    }
+  }
+}

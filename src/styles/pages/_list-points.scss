@@ -1,0 +1,26 @@
+.list-points {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  row-gap: 1.5rem;
+  margin-bottom: 1rem;
+  align-items: stretch;
+
+  &-item {
+    border-radius: 20px;
+    padding: 1rem;
+    max-width: 80%;
+  }
+
+  &-left {
+    align-self: flex-start;
+    background-color: $color-5;
+    @extend .list-points-item;
+  }
+
+  &-right {
+    align-self: flex-end;
+    background-color: $color-3;
+    @extend .list-points-item;
+  }
+}
